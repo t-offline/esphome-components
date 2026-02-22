@@ -143,11 +143,11 @@ namespace
             FieldMatcher::build()
             .set(MeasurementType::Instantaneous)
             .set(VIFRange::Volume)
-            .set(StorageNr(3))
+            .set(StorageNr(8))
             );
 
         addNumericFieldWithExtractor(
-            "target",
+            "target_date",
             "The end of last month.",
             DEFAULT_PRINT_PROPERTIES,
             Quantity::PointInTime,
@@ -155,7 +155,7 @@ namespace
             FieldMatcher::build()
             .set(MeasurementType::Instantaneous)
             .set(VIFRange::DateTime)
-            .set(StorageNr(3))
+            .set(StorageNr(8))
             );
 
         addNumericFieldWithExtractor(
